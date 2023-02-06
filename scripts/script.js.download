@@ -41,8 +41,21 @@ function clickButton() {
             } else if(buttons[i].classList.contains('sign')) {
                 inputSign(displayValue);
                 updateDisplay();
-            } else if(buttons[i].classList.contains('clear'))
+            } else if(buttons[i].classList.contains('clear')){
                 clearDisplay();
+                updateDisplay();
+                // below are the funtions of the four new buttons: sqrt, square, ln, and log. 
+            } else if(buttons[i].classList.contains('squareRt')){
+                sqRoot(displayValue);
+                updateDisplay();
+            } else if(buttons[i].classList.contains('sqNum')){
+                squareNum(displayValue);
+                updateDisplay();
+            } else if(buttons[i].classList.contains('natLog')){
+                natlogNum(displayValue);
+                updateDisplay();
+            } else if(buttons[i].classList.contains('logTen'))
+                logNum(displayValue);
                 updateDisplay();
         }
     )}
@@ -181,4 +194,20 @@ function operate(x, y, op) {
 
 function roundAccurately(num, places) {
     return parseFloat(Math.round(num + 'e' + places) + 'e-' + places);
+}
+
+function sqRoot(num){
+    return displayValue = Math.sqrt(num).toString()//square root function 
+}
+
+function natlogNum(num){
+    return displayValue = Math.log(num).toString() // ln function
+}
+
+function squareNum(num){
+    return displayValue = Math.pow(num, 2).toString() // squared
+}
+
+function logNum(num){
+    return displayValue = Math.log10(num).toString()// log function
 }

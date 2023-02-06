@@ -110,10 +110,37 @@ button {
 }
 
 
- .newbutton:active {
+.logTen:active {
     background-color:palevioletred ;
  }
 
- .newbutton {
+ .logTen {
+    background-color:lightpink  ;
+ }
+
+
+ .squareRt:active {
+    background-color:palevioletred ;
+ }
+
+ .squareRt {
+    background-color:lightpink  ;
+ }
+
+
+ .sqNum:active {
+    background-color:palevioletred ;
+ }
+
+ .sqNum {
+    background-color:lightpink  ;
+ }
+
+
+ .natLog:active {
+    background-color:palevioletred ;
+ }
+
+ .natLog {
     background-color:lightpink  ;
  }
